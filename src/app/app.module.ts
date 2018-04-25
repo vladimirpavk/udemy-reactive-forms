@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
     HttpModule
   ],
   providers: [ FormBuilder ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ ExerciseComponent ]
 })
 export class AppModule { }

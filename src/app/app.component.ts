@@ -35,18 +35,6 @@ export class AppComponent implements OnInit{
       }),
       'gender': new FormControl('male')
     });
-    //console.log(this.reactiveForm);
-    /*const obs1=Observable.create((observer:Observer<{[s:string]:boolean}>)=>{
-      setTimeout(()=>{
-        if(this.forbiddenNames.indexOf("nikola")==0){      
-          observer.next({isForbiddenName: true });
-        }
-        else
-          observer.next(null);
-      }, 5000);
-    });           
-    obs1.subscribe((val:any)=>{console.log(val);})*/
-
   }
 
   nameValidator(formControl: FormControl):{[s:string]:boolean}{    
